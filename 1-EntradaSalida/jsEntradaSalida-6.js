@@ -6,6 +6,6 @@ function sumar()
 	var numeroUno;
 	var numeroDos;
 	numeroUno=document.getElementById('numeroUno').value;
-	numeroDos=document.getElementById("numeroDos").value;
+	numeroDos=document.getElementById('numeroDos').value;
 	alert("la suma es "+(parseInt(numeroUno)+parseInt(numeroDos)));
 }

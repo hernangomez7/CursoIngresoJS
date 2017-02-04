@@ -4,40 +4,38 @@ mostar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	var numeroUno;
-	var numeroDos;
+	var numeroUno
+	var numeroDos
 	numeroUno=document.getElementById('numeroUno').value;
 	numeroDos=document.getElementById('numeroDos').value;
-	alert("la suma es ="+(parseInt(numeroUno)+parseInt(numeroDos)));
+	alert("la suma resulta = "+(parseInt(numeroUno)+parseInt(numeroDos)));
 }
 
 function restar()
 {
-	var numeroUno;
-	var numeroDos;
+	var numeroUno
+	var numeroDos
 	numeroUno=document.getElementById('numeroUno').value;
 	numeroDos=document.getElementById('numeroDos').value;
-	alert("la resta es ="+((numeroUno)-(numeroDos)));
+	alert("la resta resulta = "+(parseInt(numeroUno)-parseInt(numeroDos)));
 	
 }
 
 function multiplicar()
 { 
-	var numeroUno;
-	var numeroDos;
+	var numeroUno
+	var numeroDos
 	numeroUno=document.getElementById('numeroUno').value;
 	numeroDos=document.getElementById('numeroDos').value;
-	alert("la multiplicacion resulta ="+((numeroUno)*(numeroDos)));
-	
+	alert("la multiplicacion resulta = "+(parseInt(numeroUno)*parseInt(numeroDos)));
 }
 
 function dividir()
 {
-	var numeroUno;
-	var numeroDos;
+	var numeroUno
+	var numeroDos
 	numeroUno=document.getElementById('numeroUno').value;
 	numeroDos=document.getElementById('numeroDos').value;
-	alert("la division resulta ="+((numeroUno)/(numeroDos)));
-
+	alert("la divicion resulta = "+(parseInt(numeroUno)/parseInt(numeroDos)));
 }
 
