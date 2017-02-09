@@ -6,13 +6,52 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
-
+	var Largo;
+	var Ancho;
+	var radio;
+	var resultado;
+	Largo=document.getElementById('Largo').value;
+	Ancho=document.getElementById('Ancho').value;
+	radio=document.getElementById('Radio').value;
+	Largo=parseInt(Largo);
+	Ancho=parseInt(Ancho);
+	Radio=parseInt(Radio);
+	resultado=2*(Largo+Ancho);
+	alert("El Rectangulo de alambre es = "+(resultado)+" m");
 }
 function Circulo () 
 {
-	
+	var Largo;
+	var Ancho;
+	var radio;
+	var resultado;
+	Largo=document.getElementById('Largo').value;
+	Ancho=document.getElementById('Ancho').value;
+	radio=document.getElementById('Radio').value;
+	Largo=parseInt(Largo);
+	Ancho=parseInt(Ancho);
+	radio=parseInt(radio);
+	resultado=2*3.14*(radio);
+	alert("El circulo de alambre es = "+(resultado)+" m");
 }
 function Materiales () 
 {
-	
+	var Largo;
+	var Ancho;
+	var radio;
+	var resultado;
+	var resultado2;
+	var cemento;
+	var cal;
+	Largo=document.getElementById('Largo').value;
+	Ancho=document.getElementById('Ancho').value;
+	radio=document.getElementById('Radio').value;
+	Largo=parseInt(Largo);
+	Ancho=parseInt(Ancho);
+	radio=parseInt(radio);
+	resultado=(Largo+Ancho);
+	cal=resultado*1.5
+	cemento=resultado*1
+	alert("La cantidad de bolsas de cemeto es = "+(cemento)+" Bolsas");
+	alert("La cantidad de bolsas de cal es = "+(cal)+" Bolsas");
 }
