@@ -4,11 +4,8 @@ function Mostrar()
     var edad;
 	edad=document.getElementById('edad').value;
 	edad=parseInt(edad);
-	if (edad<13){
-	} else if (edad<18){
-		alert("Usted es adolesente");
-	} else {
+	if (edad<18)
+	{
+		alert("Usted no es adolesente");
 	} 
-
-
 }//FIN DE LA FUNCIÓN

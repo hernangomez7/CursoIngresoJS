@@ -4,10 +4,9 @@ function Mostrar()
     var edad;
     edad=document.getElementById('edad').value;
     edad=parseInt(edad);
-    if (edad==15){
+    if (edad==15)
+    {
 	    alert("niña bonita");
-    } else {
-    	alert("Error");
     }
 
 }//FIN DE LA FUNCIÓN
