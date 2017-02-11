@@ -1,8 +1,15 @@
 function Mostrar()
 { 
     var laHora = document.getElementById('hora').value;
-    if (laHora>6&laHora<12){
-    	alert("Es de mañana")
-    } else{
+    laHora=parseInt(laHora);
+    switch(laHora)
+    {
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+        alert("es de mañana");
+        break;
     }
 }//FIN DE LA FUNCIÓN

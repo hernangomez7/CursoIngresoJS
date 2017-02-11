@@ -1,10 +1,26 @@
 function Mostrar()
 {
 //tomo la edad  
-    if (mesDelAño=="Febrero"){
-	    alert("Este mes no tiene màs de 29 dìas.")
-    } else{
-	    alert("Este mes tiene 30 o màs dìas")
-    }
-//alert (mesDelAño);
-}//FIN DE LA FUNCIÓN
+    var mesDelAño=document.getElementById('mes').value;
+	switch(mesDelAño)
+	{
+		case"Enero":
+		alert("este mes tiene 30 dias o mas");
+        break;
+        case"Febrero":
+        alert("este mes tiene 29 dias");
+        break;
+        case"Marzo":
+        case"Abril":
+        case"Mayo":
+        case"Junio":
+        case"Julio":
+        case"Agosto":
+        case"Septiembre":
+        case"Octubre":
+        case"Noviembre":
+        case"Diciembre":
+        alert("este mes tiene 30 dias o mas");
+        break;
+	}
+}

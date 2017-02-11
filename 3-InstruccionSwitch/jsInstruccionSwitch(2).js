@@ -1,29 +1,25 @@
 function Mostrar()
 {
-    var mesDelAño = document.getElementById('mes').value;
-    if (mesDelAño=="Enero"){
-	    alert("Falta para el invierno.");
-    } else if (mesDelAño=="Febrero"){
-	    alert("Falta para el invierno.");
-    } else if (mesDelAño=="Marzo"){
-	    alert("Falta para el invierno.");
-    } else if (mesDelAño=="Abril"){
-	    alert("Falta para el invierno.");
-    } else if (mesDelAño=="Mayo"){
-	    alert("Falta para el invierno.");
-    } else if (mesDelAño=="Junio"){
-	    alert("Falta poco para el frio.");
-    } else if (mesDelAño=="Julio"){
-	    alert("Abrigate que hace frio.");
-    } else if (mesDelAño=="Agosto"){
-	    alert("Abrigate que hace frio.");
-    } else if (mesDelAño=="Septiembre"){
-	    alert("Abrigate que hace frio.");
-    } else if (mesDelAño=="Octubre"){
-	    alert("Ya pasamos el frio ahora viene el calor!!!.");
-    } else if (mesDelAño=="Noviembre"){
-	    alert("Ya pasamos el frio ahora viene el calor!!!.");
-    } else {
-	    alert("Ya pasamos el frio ahora viene el calor!!!");
+        var mesDelAño=document.getElementById('mes').value;
+    switch(mesDelAño)
+    {
+        case"Enero":
+        case"Febrero":
+        case"Marzo":
+        case"Abril":
+        case"Mayo":
+        case"Junio":
+        alert("Falta para el invierno");
+        break;
+        case"Julio":
+        case"Agosto":
+        alert("Abrigarse que hace frio");
+        break;
+        case"Septiembre":
+        case"Octubre":
+        case"Noviembre":
+        case"Diciembre":
+        alert("Ya pasamos el frio, ahora calor!!!.");
+        break;
     }
 }//FIN DE LA FUNCIÓN
