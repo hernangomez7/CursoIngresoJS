@@ -53,5 +53,7 @@ function CalcularPrecio ()
 		precioFinal=resultado*1.1;
 		impuesto=resultado*0.1;
 	}
-	alert("Precio final es = "+precioFinal+"$ Usted pago "+impuesto+"$ de IIBB");
+	precioFinal=parseInt(precioFinal);
+	precioFinal==Math.round(precioFinal);
+	document.getElementById('precioDescuento').value="Total"+precioFinal+"$ Usted pago "+impuesto+"$ de IIBB";
 }
