@@ -7,6 +7,6 @@ function Mostrar()
     text += " " + (numeroAscendente);
     (numeroAscendente)++;
 }
-alert(text);
-
+//alert(text);
+	document.write("<br>"+text);
 }//FIN DE LA FUNCIÓN
