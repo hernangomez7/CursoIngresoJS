@@ -1,3 +1,4 @@
+/*
 var miTemporizador ;
 var contador=0;
 
@@ -21,3 +22,20 @@ function fin()
 	clearTimeout(miIntervalo);
 
 }//FIN DE LA FUNCIÓN fin
+*/
+var intervalo;
+var contador;
+function inicio()
+{
+	alert("intervalo iniciado");
+	intervalo=setTimeout(mensaje,3000);
+}
+function mensaje()
+{
+	alert("Bienvenido a la UTN FRA");
+}
+function fin()
+{
+	alert("fin de intervalo");
+	clearTimeout(intervalo);
+}

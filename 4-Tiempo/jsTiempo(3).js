@@ -1,3 +1,4 @@
+/*
 var miIntervalo ;
 var contador=0;
 
@@ -21,3 +22,21 @@ function fin()
 	clearInterval(miIntervalo);
 
 }//FIN DE LA FUNCIÓN fin
+*/
+var Intervalo;
+var Contador=0;
+function inicio()
+{
+	alert("incio de intervalo");
+	Intervalo=setInterval(mensaje,2000);
+}
+function mensaje()
+{
+	Contador=Contador+1;
+	alert("Bienvenido a la UTF FRA "+"veces de mensaje "+Contador);
+}
+function fin()
+{
+	clearInterval(Intervalo);
+	alert("final de intervalo");
+}

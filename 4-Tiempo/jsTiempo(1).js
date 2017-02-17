@@ -1,4 +1,4 @@
-var miIntervalo ;
+/*var miIntervalo ;
 
 function inicio()
 {	
@@ -12,4 +12,14 @@ function SegundosEnElAire() {
     alert("Bienvenido a la UTN FRA");
 
 }//FIN DE LA FUNCIÓN SegundosEnElAire
+*/
 
+var Intervalo;
+function inicio()
+{
+	Intervalo = setInterval(IntervaloInicio,3000);
+}
+function IntervaloInicio()
+{
+	alert("Bienvenido a la UTN FRA");
+}

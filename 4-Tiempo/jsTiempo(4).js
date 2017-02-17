@@ -1,3 +1,4 @@
+/*
 var miIntervalo ;
 var contador=0;
 
@@ -24,3 +25,25 @@ function fin()
 	clearInterval(miIntervalo);
 
 }//FIN DE LA FUNCIÓN fin
+*/
+var Intervalo;
+var contador=0;
+function inicio()
+{
+	alert("intervalo iniciado");
+	Intervalo=setInterval(mensaje,2000);
+}
+function mensaje()
+{
+	contador=contador+1;
+	alert("Bienvenido a la UTN FRA "+contador);
+	if (contador==5)
+	{
+		clearInterval(Intervalo);
+	}
+}
+function fin()
+{
+	alert("fin del intervalo");
+	clearInterval(Intervalo);
+}

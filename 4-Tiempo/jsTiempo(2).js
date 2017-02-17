@@ -1,3 +1,4 @@
+/*
 var miIntervalo ;
 
 
@@ -20,3 +21,19 @@ function fin()
 	clearTimeout(miIntervalo);
 
 }//FIN DE LA FUNCIÓN fin
+*/
+var Intervalo;
+function inicio()
+{
+	alert("Inicio de intervalo = Activado");
+	Intervalo= setInterval(Mensaje,3000);
+}
+function Mensaje()
+{
+	alert("Bienvenido a la UTN FRA");
+}
+function fin()
+{
+	alert("Inicio de intervalo = Desactivado");
+	clearTimeout(Intervalo);
+}
