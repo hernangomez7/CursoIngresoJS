@@ -23,6 +23,7 @@ function fin()
 
 }//FIN DE LA FUNCIÓN fin
 */
+/*
 var intervalo;
 var contador;
 function inicio()
@@ -39,3 +40,14 @@ function fin()
 	alert("fin de intervalo");
 	clearTimeout(intervalo);
 }
+*/
+	var Intervalo;
+
+	function inicio()
+	{
+		Intervalo=setTimeout(mensaje,3000);
+	}
+	function mensaje()
+	{
+		alert("Bienvenido a la UTN FRA");
+	}

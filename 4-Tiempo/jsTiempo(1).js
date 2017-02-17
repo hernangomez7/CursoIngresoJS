@@ -13,13 +13,23 @@ function SegundosEnElAire() {
 
 }//FIN DE LA FUNCIÓN SegundosEnElAire
 */
-
+/*
 var Intervalo;
 function inicio()
 {
 	Intervalo = setInterval(IntervaloInicio,3000);
 }
 function IntervaloInicio()
+{
+	alert("Bienvenido a la UTN FRA");
+}
+*/
+var Intervalo;
+function inicio()
+{
+	Intervalo=setInterval(mensaje,3000);
+}
+function mensaje()
 {
 	alert("Bienvenido a la UTN FRA");
 }

@@ -1,3 +1,4 @@
+/*
 var miTemporizador ;
 var contador=0;
 var tiempoInicio;
@@ -29,3 +30,26 @@ function ContarMilisegundos()
 	resultado=tiempoFinal-tiempoInicio;
 	alert("su tiempo fue: "+resultado);
 }//FIN DE LA FUNCIÓN fin
+*/
+	var Intervalo;
+	var tiempoInicial;
+	var tiempoFinal;
+	var resultado;
+	function inicio()
+	{
+		Intervalo=setTimeout(unclock,3000);
+	}
+	function unclock()
+	{
+		document.getElementById('secreto').style.visibility="visible";
+		tiempoInicial= new Date();
+		tiempoInicial=tiempoInicial.getTime();
+		alert(tiempoInicial);
+	}
+	function ContarMilisegundos()
+	{
+		tiempoFinal=new Date();
+		tiempoFinal=tiempoFinal.getTime();
+		resultado=tiempoFinal-tiempoInicial;
+		alert(resultado);
+	}
