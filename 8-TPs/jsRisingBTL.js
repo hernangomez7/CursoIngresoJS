@@ -7,7 +7,37 @@ D.	Sueldo bruto, no menor a 8000.
 E.	Número de legajo, numérico de 4 cifras, sin ceros a la izquierda.
 F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para nacionalizados.
  */
-function ComenzarIngreso () 
-{
- 
-}
+	function ComenzarIngreso () 
+	{
+ 	var edad;
+ 	var edadval=0;
+ 	var sexo;
+ 	var estadoCivil;
+ 	var sueldo;
+ 	var legajo;
+ 	var nacionalidad;
+ 	edad=prompt("ingrese una edad entre 18 y 90 años");
+ 	edad=parseInt(edad);
+ 	if (isNaN(edad))
+	{
+		edad=0;
+	}
+	if (edad>17&&edad<91)
+	{
+		edad=edad+" años de edad";
+		edadval=1;
+	}
+	while (edadval==0)
+	{
+		edad="edad no valida";
+		edadval=1;
+	}
+	document.getElementById('Edad').value=edad;
+
+
+
+
+
+
+
+	}
