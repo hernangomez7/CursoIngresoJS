@@ -6,8 +6,36 @@ b.	Se pedirán un número positivo y se mostrará la cantidad de números pares 
 c.	Se pedirán un número positivo y se mostrará la cantidad de números divisibles de este número que se encuentran desde el 1 al 100.
 d.	Se pedirán un número positivo y se mostrará si el número es un número primo o no.
 e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos desde el número ingresado hasta el cero.
-*/
-function ComenzarIngreso () 
-{
- 	
-}
+*/	
+	var numeroingre;
+	var primo;
+	var noPrimo;
+	var anteriores;
+	var recorrido;
+	
+	function NumerosPrimos()
+ 	{
+	 	numeroingre=document.getElementById('numero').value;
+	 	numeroingre=parseInt(numeroingre);
+		for(recorrido=2;recorrido<=numeroingre;recorrido++)
+	 	{
+	 		noPrimo="no";
+	 		for(anteriores=2;anteriores<recorrido;anteriores++)
+	 		{
+	 			if(recorrido%anteriores==0)
+	 			{
+	 				noPrimo="si";
+	 				break;
+	 			}
+	 			
+	 		}
+	 		if(noPrimo=="si")
+	 			{
+	 			}
+	 			else
+	 			{
+	  			console.log("el "+recorrido+" es primo");
+	 			}
+	 	}
+ 	}
+
